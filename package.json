@@ -1,0 +1,33 @@
+{
+  "name": "updateip",
+  "version": "1.0.0",
+  "description": "CLI tool to update an AWS Security Group with your current or specified IP address.",
+  "license": "MIT",
+  "author": "Luis Felipe A. Fleury (felipe.fleury@gmail.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/updateip.git"
+  },
+  "keywords": [
+    "aws",
+    "security-group",
+    "ip",
+    "cli",
+    "devops"
+  ],
+  "main": "index.js",
+  "bin": {
+    "update-sg": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --coverage --colors"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ec2": "^3.828.0",
+    "@aws-sdk/credential-providers": "^3.828.0"
+  }
+}
