@@ -1,5 +1,5 @@
 {
-  "name": "updateip",
+  "name": "update-sg-ip",
   "version": "1.0.0",
   "description": "CLI tool to update an AWS Security Group with your current or specified IP address.",
   "license": "MIT",
@@ -17,10 +17,9 @@
   ],
   "main": "index.js",
   "bin": {
-    "update-sg": "./index.js"
+    "update-sg-ip": "./index.js"
   },
   "scripts": {
-    "start": "node index.js",
     "test": "jest --coverage --colors"
   },
   "devDependencies": {

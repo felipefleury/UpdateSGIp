@@ -14,22 +14,18 @@ A CLI tool to easily authorize your current (or specified) IP address in an AWS 
 
 ## Installation
 
-Clone this repository and install dependencies:
-
 ```sh
-git clone <repo-url>
-cd UpdateIP
-yarn install   # or npm install
+npm i update-ip-sg -g
 ```
 
 ---
 
 ## Usage
 
-Run the script with Node.js:
+Run the script:
 
 ```sh
-node update-sg.js \
+update-sg-ip \
   --profile <aws-profile> \
   --region <aws-region> \
   --group-id <sg-id> \
@@ -54,14 +50,14 @@ node update-sg.js \
 Allow your current public IP to access port 1433 on a specific Security Group:
 
 ```sh
-node update-sg.js --profile myservice --region us-east-1 \
+update-sg-ip --profile myservice --region us-east-1 \
   --group-id sg-0abc1234def5678gh --auto-ip --port 1433
 ```
 
 Allow a specific IP/CIDR to access port 22:
 
 ```sh
-node update-sg.js --group-id sg-0abc1234def5678gh --ip 203.0.113.5/32 --port 22
+update-sg-ip --group-id sg-0abc1234def5678gh --ip 203.0.113.5/32 --port 22
 ```
 
 ---

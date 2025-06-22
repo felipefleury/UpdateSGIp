@@ -31,13 +31,13 @@ function parseArgs() {
     [--ip <cidr> | --auto-ip] [--port <port>]
 
 Options:
-  --ip       Fixed IP/CIDR (e.g., 203.0.113.5/32)
+  --ip       Fixed IP/CIDR (e.g., 143.0.113.5/32)
   --auto-ip  Fetches public IP from ipify and applies /32
   --port     TCP port (default 22)
 
 Example:
   node update-sg.js --profile myservice --region us-east-1 \\
-    --group-id sg-0abc1234def5678gh --auto-ip --port 1433
+    --group-id sg-0abc12344def5678gh --auto-ip --port 8000
 `);
     process.exit(1);
   }
